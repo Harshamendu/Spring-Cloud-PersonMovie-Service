@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "c02cba97-2076-4a59-8263-e568f8ce2002",
+		"name": "PersonMovieService_Postman Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AllPersonMovie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9071/personMovie/getAllPersonMovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9071",
+					"path": [
+						"personMovie",
+						"getAllPersonMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person Movie by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9071/personMovie/getPersonMovie?personId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9071",
+					"path": [
+						"personMovie",
+						"getPersonMovie"
+					],
+					"query": [
+						{
+							"key": "personId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
